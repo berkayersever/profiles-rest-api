@@ -30,7 +30,6 @@ Vagrant.configure("2") do |config|
       echo "alias python='python3'" >> /home/vagrant/.bash_aliases
     fi
   SHELL
-end
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
