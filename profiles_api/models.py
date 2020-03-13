@@ -48,3 +48,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         """Return string representation of the user"""
         return self.email
+
+
+class ProfileFeedItem(models.Model):
+    """Profile status update"""
