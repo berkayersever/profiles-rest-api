@@ -73,7 +73,7 @@ class HelloViewSet(viewsets.ViewSet):
             return Response(serializer.errors, status.HTTP_400_BAD_REQUEST)
 
     def retrieve(self, request, pk=None):
-        """Handle getting an object by it's ID"""
+        """Handles getting an object by it's ID"""
         return Response({'http_method': 'GET'})
 
     def update(self, request, pk=None):
