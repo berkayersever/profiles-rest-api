@@ -77,7 +77,7 @@ class HelloViewSet(viewsets.ViewSet):
         return Response({'http_method': 'GET'})
 
     def update(self, request, pk=None):
-        """Handle updating an object"""
+        """Handles updating an object"""
         return Response({'http_method': 'PUT'})
 
     def partial_update(self, request, pk=None):
