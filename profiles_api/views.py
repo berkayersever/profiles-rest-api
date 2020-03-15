@@ -25,7 +25,7 @@ class HelloApiView(APIView):
         return Response({'message': 'Hello!', 'api_view': api_view})
 
     def post(self, request):
-        """Create a hello message with our name"""
+        """Creates a hello message with our name"""
         serializer = self.serializer_class(data=request.data)
         if serializer.is_valid():
             name = serializer.validated_data.get('name')
